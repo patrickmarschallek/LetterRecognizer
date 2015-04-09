@@ -1,3 +1,5 @@
+(load "matrix.lisp")
+
 (defclass neural-network ()
   ((layer-count
     :reader layer-count
