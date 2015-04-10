@@ -1,4 +1,8 @@
 (load "neural_network.lisp")
+(load "input/letter_inout.lisp")
+(load "input/xor_input.lisp")
+(load "desired/xor_desired.lisp")
+
 
 ; example initialization
 (defparameter *network*
@@ -17,7 +21,7 @@
 ; (trainf *network* train test)
 
 ;compute the outputs
-(computef *network* (make-array '(2) :initial-contents '(0 0)))
+;(computef *network* (make-array '(2) :initial-contents '(0 0)))
 (computef *network* (make-array '(2) :initial-contents '(1 0)))
-(computef *network* (make-array '(2) :initial-contents '(0 1)))
-(computef *network* (make-array '(2) :initial-contents '(1 1)))
+;(computef *network* (make-array '(2) :initial-contents '(0 1)))
+;(computef *network* (make-array '(2) :initial-contents '(1 1)))
