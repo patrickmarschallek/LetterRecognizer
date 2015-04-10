@@ -53,9 +53,38 @@
     (print "not implemented yet.")
   )
 
+;
+; PSEUDO CODE from wikipedia 
+;
+;initialize network weights (often small random values)
+; do
+;    forEach training example ex
+;       prediction = neural-net-output(network, ex)  // forward pass
+;       actual = teacher-output(ex)
+;       compute error (prediction - actual) at the output units
+;       compute \Delta w_h for all weights from hidden layer to output layer  // backward pass
+;       compute \Delta w_i for all weights from input layer to hidden layer   // backward pass continued
+;       update network weights // input layer not modified by error estimate
+; until all examples classified correctly or another stopping criterion satisfied
+; return the network
+;
 (defun trainf (network train)
    ;train the neural network
     (print "not implemented yet.")
+  )
+
+;
+;  (o_j - t_j) sigmoid(net_j) (1-sigmoid(netj) )
+;
+(defun output-delta (o d)
+
+  )
+;
+; (sum_l(delta w_j_l) ) sigmoid(net_j) (1-sigmoid(netj) )
+;
+; function which calculates the difference for the hidden layer
+(defun hidden-delta (o d)
+
   )
 
 (defun list-dimensions (list depth)
