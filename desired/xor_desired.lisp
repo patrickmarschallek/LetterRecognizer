@@ -1,8 +1,5 @@
-(defparameter xor-desired (make-array (list 4 1) :initial-contents
- '(
-	(0) 
-	(1) 
-	(1) 
-	(0)
- )
-)
+(defparameter xor-desired (make-array (list 4) ))
+(setf (aref xor-desired 0 )  (make-array (list 1) :initial-contents '(0)))
+(setf (aref xor-desired 1 ) (make-array (list 1) :initial-contents '(1)))
+(setf (aref xor-desired 2 ) (make-array (list 1) :initial-contents '(1)))
+(setf (aref xor-desired 3 ) (make-array (list 1) :initial-contents '(0)))
